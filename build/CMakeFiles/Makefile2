@@ -56,6 +56,7 @@ CMAKE_BINARY_DIR = /home/badbud/auv/rostasks/build
 all: gtest/all
 all: task1_pkg/all
 all: task2_pkg/all
+all: task3_pkg/all
 
 .PHONY : all
 
@@ -63,6 +64,7 @@ all: task2_pkg/all
 preinstall: gtest/preinstall
 preinstall: task1_pkg/preinstall
 preinstall: task2_pkg/preinstall
+preinstall: task3_pkg/preinstall
 
 .PHONY : preinstall
 
@@ -75,6 +77,7 @@ clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: task1_pkg/clean
 clean: task2_pkg/clean
+clean: task3_pkg/clean
 
 .PHONY : clean
 
@@ -184,6 +187,36 @@ task2_pkg/preinstall:
 task2_pkg/clean:
 
 .PHONY : task2_pkg/clean
+
+#=============================================================================
+# Directory level rules for directory task3_pkg
+
+# Recursive "all" directory target.
+task3_pkg/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all
+
+.PHONY : task3_pkg/all
+
+# Recursive "preinstall" directory target.
+task3_pkg/preinstall:
+
+.PHONY : task3_pkg/preinstall
+
+# Recursive "clean" directory target.
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_genpy.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_geneus.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/clean
+task3_pkg/clean: task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/clean
+
+.PHONY : task3_pkg/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -833,6 +866,371 @@ rosgraph_msgs_generate_messages_py: task1_pkg/CMakeFiles/rosgraph_msgs_generate_
 task1_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 	$(MAKE) -f task1_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make task1_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : task1_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target task3_pkg_generate_messages"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/rule
+
+# Convenience name for target.
+task3_pkg_generate_messages: task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/rule
+
+.PHONY : task3_pkg_generate_messages
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all:
+	$(MAKE) -f task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/build.make task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/build.make task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target _task3_pkg_generate_messages_check_deps_node1"
+.PHONY : task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/rule
+
+# Convenience name for target.
+_task3_pkg_generate_messages_check_deps_node1: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/rule
+
+.PHONY : _task3_pkg_generate_messages_check_deps_node1
+
+# clean rule for target.
+task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/build.make task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/clean
+.PHONY : task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all:
+	$(MAKE) -f task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/build.make task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/build.make task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target _task3_pkg_generate_messages_check_deps_node2"
+.PHONY : task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/rule
+
+# Convenience name for target.
+_task3_pkg_generate_messages_check_deps_node2: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/rule
+
+.PHONY : _task3_pkg_generate_messages_check_deps_node2
+
+# clean rule for target.
+task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/build.make task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/clean
+.PHONY : task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_gencpp.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target task3_pkg_gencpp"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/rule
+
+# Convenience name for target.
+task3_pkg_gencpp: task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/rule
+
+.PHONY : task3_pkg_gencpp
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/all: task1_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num=9,10 "Built target task3_pkg_generate_messages_cpp"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+task3_pkg_generate_messages_cpp: task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/rule
+
+.PHONY : task3_pkg_generate_messages_cpp
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/build.make task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/build.make task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target task3_pkg_gennodejs"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/rule
+
+# Convenience name for target.
+task3_pkg_gennodejs: task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/rule
+
+.PHONY : task3_pkg_gennodejs
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/build.make task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_gennodejs.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/all: task1_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num=18,19,20 "Built target task3_pkg_generate_messages_py"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/rule
+
+# Convenience name for target.
+task3_pkg_generate_messages_py: task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/rule
+
+.PHONY : task3_pkg_generate_messages_py
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_genlisp.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target task3_pkg_genlisp"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/rule
+
+# Convenience name for target.
+task3_pkg_genlisp: task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/rule
+
+.PHONY : task3_pkg_genlisp
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_genlisp.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_genpy.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_genpy.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_py.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_genpy.dir/build.make task3_pkg/CMakeFiles/task3_pkg_genpy.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_genpy.dir/build.make task3_pkg/CMakeFiles/task3_pkg_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target task3_pkg_genpy"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_genpy.dir/rule
+
+# Convenience name for target.
+task3_pkg_genpy: task3_pkg/CMakeFiles/task3_pkg_genpy.dir/rule
+
+.PHONY : task3_pkg_genpy
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_genpy.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_genpy.dir/build.make task3_pkg/CMakeFiles/task3_pkg_genpy.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_geneus.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_geneus.dir/all: task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_geneus.dir/build.make task3_pkg/CMakeFiles/task3_pkg_geneus.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_geneus.dir/build.make task3_pkg/CMakeFiles/task3_pkg_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num= "Built target task3_pkg_geneus"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_geneus.dir/rule
+
+# Convenience name for target.
+task3_pkg_geneus: task3_pkg/CMakeFiles/task3_pkg_geneus.dir/rule
+
+.PHONY : task3_pkg_geneus
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_geneus.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_geneus.dir/build.make task3_pkg/CMakeFiles/task3_pkg_geneus.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/all: task1_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num=14,15 "Built target task3_pkg_generate_messages_lisp"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+task3_pkg_generate_messages_lisp: task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/rule
+
+.PHONY : task3_pkg_generate_messages_lisp
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/all: task1_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num=11,12,13 "Built target task3_pkg_generate_messages_eus"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+task3_pkg_generate_messages_eus: task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/rule
+
+.PHONY : task3_pkg_generate_messages_eus
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir
+
+# All Build rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/all: task1_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node1.dir/all
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/all: task3_pkg/CMakeFiles/_task3_pkg_generate_messages_check_deps_node2.dir/all
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/depend
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/badbud/auv/rostasks/build/CMakeFiles --progress-num=16,17 "Built target task3_pkg_generate_messages_nodejs"
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badbud/auv/rostasks/build/CMakeFiles 0
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+task3_pkg_generate_messages_nodejs: task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/rule
+
+.PHONY : task3_pkg_generate_messages_nodejs
+
+# clean rule for target.
+task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/build.make task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/clean
+.PHONY : task3_pkg/CMakeFiles/task3_pkg_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

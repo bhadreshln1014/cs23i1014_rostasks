@@ -1,2 +1,2 @@
-task1_pkg:task2_pkg
+task1_pkg:task2_pkg:task3_pkg
 -DCATKIN_DEVEL_PREFIX=/home/badbud/auv/rostasks/devel -DCMAKE_INSTALL_PREFIX=/home/badbud/auv/rostasks/install -G Unix Makefiles

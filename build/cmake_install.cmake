@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/badbud/auv/rostasks/build/gtest/cmake_install.cmake")
   include("/home/badbud/auv/rostasks/build/task1_pkg/cmake_install.cmake")
   include("/home/badbud/auv/rostasks/build/task2_pkg/cmake_install.cmake")
+  include("/home/badbud/auv/rostasks/build/task3_pkg/cmake_install.cmake")
 
 endif()
 

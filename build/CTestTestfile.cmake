@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("task1_pkg")
 subdirs("task2_pkg")
+subdirs("task3_pkg")
