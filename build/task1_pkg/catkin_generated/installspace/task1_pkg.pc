@@ -1,0 +1,8 @@
+prefix=/home/badbud/auv/rostasks/install
+
+Name: task1_pkg
+Description: Description of task1_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
